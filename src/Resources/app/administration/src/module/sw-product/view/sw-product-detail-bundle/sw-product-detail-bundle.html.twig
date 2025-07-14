@@ -16,7 +16,7 @@
             placeholder="Produkt auswählen"
             label="Produkt zum Bundle hinzufügen"
             v-model="selectedProduct"
-            @change="onAddProduct">
+            @update:value="onAddProduct">
 
         <template #selection-label-property="{ item }">
             <slot
